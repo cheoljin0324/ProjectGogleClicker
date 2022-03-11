@@ -9,6 +9,8 @@ public class MoneyErrorMessae : MonoBehaviour
     private Image erImage;
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +20,10 @@ public class MoneyErrorMessae : MonoBehaviour
 
     void MoneyError()
     {
+        
        
         erImage.transform.DOMove(new Vector3(erImage.transform.position.x, 1f, 0f), 0.8f, false);
         erImage.DOFade(0f, 0.7f);
-        Debug.Log("c");
         Invoke("erDes", 1f);
     }
 

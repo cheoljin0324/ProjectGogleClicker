@@ -16,6 +16,10 @@ public class UiManager : MonoBehaviour
     [SerializeField]
     private Sprite[] sprite;
 
+    [SerializeField]
+    private Button buttonTest;
+    [SerializeField]
+    private Button mapButton;
 
 
     [SerializeField]
@@ -101,7 +105,24 @@ public class UiManager : MonoBehaviour
         isOnButton = false;
     }
 
-    
+    public void NoTest()
+    {
+        buttonTest.gameObject.SetActive(true);
+    }
+
+    public void NoTestFalse()
+    {
+        buttonTest.gameObject.SetActive(false);
+    }
+
+    public void MapTest()
+    {
+        mapButton.gameObject.SetActive(true);
+    }
+    public void NoMapTest()
+    {
+        mapButton.gameObject.SetActive(false);
+    }
 
 
 
