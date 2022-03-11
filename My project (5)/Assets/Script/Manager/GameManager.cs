@@ -19,7 +19,12 @@ public class GameManager : MonoSingleton<GameManager>
     private Text coinTxt;
 
     [SerializeField]
+    private GameObject TestError;
+
+    [SerializeField]
     private RiCorderShopManager ricorderShop;
+
+    public bool isTuto = false;
     
     public int RpcLevel1 = 1;
     public int RpcLevel2 = 0;
@@ -178,6 +183,12 @@ public class GameManager : MonoSingleton<GameManager>
     public void tabClick()
     {
         ClickPrint();
+    }
+
+    public void tabClickerError()
+    {
+        Instantiate(TestError);
+        isTuto = true;
     }
 
     private void Update()
