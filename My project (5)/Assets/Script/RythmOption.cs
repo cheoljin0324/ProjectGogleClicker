@@ -44,6 +44,8 @@ public class RythmOption : MonoBehaviour
     private int stack15 = 0;
     private int stack16 = 0;
 
+    private bool audioshift = false;
+
     private void Awake()
     {
         LoadStack();
@@ -374,7 +376,12 @@ public class RythmOption : MonoBehaviour
     {
         while (playingStack<16)
         {
-            
+            if (audioshift == true)
+            {
+                GameManager.Inst.audioSource.Stop();
+                audioshift = false;
+                break;
+            }
             if (isBoolPlay == false)
             {
                 break;
@@ -383,8 +390,9 @@ public class RythmOption : MonoBehaviour
             GameManager.Inst.audioSource.Play();
             if (playingStack == 15)
             {
-                isBoolPlay = false;
-                GameManager.Inst.loadaudio.volume = GameManager.Inst.beforeAudioVolum;
+                GameManager.Inst.audioSource.Stop();
+                audioshift = false;
+                break;
             }
             playingStack++;
             yield return new WaitForSeconds(0.5f);
@@ -402,6 +410,7 @@ public class RythmOption : MonoBehaviour
         {
             RythmObject.SetActive(false);
             mainCanvas.SetActive(true);
+            audioshift = true;
             contentTransform.position = new Vector3(contentTransform.position.x, 0, 0);
         }
     }
@@ -411,6 +420,7 @@ public class RythmOption : MonoBehaviour
         SaveStack();
         mainCanvas.SetActive(true);
         RythmObject.SetActive(false);
+        audioshift = true;
         contentTransform.position = new Vector3(contentTransform.position.x, 0, 0);
     }
 
@@ -419,6 +429,7 @@ public class RythmOption : MonoBehaviour
         
         mainCanvas.SetActive(true);
         RythmObject.SetActive(false);
+        audioshift = true;
         contentTransform.position = new Vector3(contentTransform.position.x, 0, 0);
     }
 
