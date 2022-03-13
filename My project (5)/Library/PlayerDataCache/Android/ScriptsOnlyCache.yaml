@@ -91,67 +91,67 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1488}
+      Script: {instanceID: 1490}
     - Class: 114
-      Script: {instanceID: 1642}
+      Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 1754}
+      Script: {instanceID: 1756}
     - Class: 114
-      Script: {instanceID: 1810}
+      Script: {instanceID: 1812}
     - Class: 114
-      Script: {instanceID: 1874}
+      Script: {instanceID: 1876}
     - Class: 114
-      Script: {instanceID: 2280}
+      Script: {instanceID: 2282}
     - Class: 114
-      Script: {instanceID: 2288}
+      Script: {instanceID: 2290}
     - Class: 114
-      Script: {instanceID: 2464}
+      Script: {instanceID: 2466}
     - Class: 114
-      Script: {instanceID: 2726}
+      Script: {instanceID: 2728}
     - Class: 114
-      Script: {instanceID: 2772}
+      Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2902}
     - Class: 114
-      Script: {instanceID: 2906}
+      Script: {instanceID: 2908}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 3140}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3388}
     - Class: 114
-      Script: {instanceID: 3506}
+      Script: {instanceID: 3508}
     - Class: 114
-      Script: {instanceID: 3646}
+      Script: {instanceID: 3648}
     - Class: 114
-      Script: {instanceID: 3738}
+      Script: {instanceID: 3740}
     - Class: 114
-      Script: {instanceID: 3976}
+      Script: {instanceID: 3978}
     - Class: 114
-      Script: {instanceID: 4010}
+      Script: {instanceID: 4012}
     - Class: 114
-      Script: {instanceID: 4104}
+      Script: {instanceID: 4106}
     - Class: 114
-      Script: {instanceID: 4264}
+      Script: {instanceID: 4266}
     - Class: 114
-      Script: {instanceID: 4584}
+      Script: {instanceID: 4586}
     - Class: 114
-      Script: {instanceID: 4678}
+      Script: {instanceID: 4680}
     - Class: 114
-      Script: {instanceID: 4802}
+      Script: {instanceID: 4804}
     - Class: 114
-      Script: {instanceID: 4944}
+      Script: {instanceID: 4946}
     - Class: 114
-      Script: {instanceID: 5154}
+      Script: {instanceID: 5156}
     - Class: 114
-      Script: {instanceID: 5346}
+      Script: {instanceID: 5348}
     - Class: 114
-      Script: {instanceID: 5350}
+      Script: {instanceID: 5352}
     - Class: 114
-      Script: {instanceID: 5750}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 5828}
+      Script: {instanceID: 5830}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -798,4 +798,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main.unity
-  playerPath: D:/Build/DessertFox_GogleClicker(BuildTest 1.0.1).apk
+  playerPath: D:/Build/DessertFox_GogleClicker(BuildTest 1.0.3).apk
