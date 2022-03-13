@@ -348,8 +348,7 @@ public class RythmOption : MonoBehaviour
 
     public void PlayAudio() { 
     
-        GameManager.Inst.beforeAudioVolum=GameManager.Inst.loadaudio.volume;
-        GameManager.Inst.loadaudio.volume = GameManager.Inst.loadaudio.volume / 10;
+        
         playingStack = 0;
         if (isBoolPlay == true)
         {
@@ -364,6 +363,8 @@ public class RythmOption : MonoBehaviour
         else if (isBoolPlay == false)
         {
             isBoolPlay = true;
+            GameManager.Inst.beforeAudioVolum = GameManager.Inst.loadaudio.volume;
+            GameManager.Inst.loadaudio.volume = GameManager.Inst.loadaudio.volume / 10;
             StartCoroutine("PlayAudioEngien");
         }
 
@@ -380,6 +381,8 @@ public class RythmOption : MonoBehaviour
             {
                 GameManager.Inst.audioSource.Stop();
                 audioshift = false;
+                GameManager.Inst.audioSource.volume = 1f;
+                GameManager.Inst.loadaudio.volume = GameManager.Inst.beforeAudioVolum;
                 break;
             }
             if (isBoolPlay == false)
@@ -388,10 +391,13 @@ public class RythmOption : MonoBehaviour
             }
             GameManager.Inst.audioSource.clip = GameManager.Inst.audioRecorder[playingStack];
             GameManager.Inst.audioSource.Play();
+
             if (playingStack == 15)
             {
                 GameManager.Inst.audioSource.Stop();
                 audioshift = false;
+                GameManager.Inst.audioSource.volume = 1f;
+                GameManager.Inst.loadaudio.volume = GameManager.Inst.loadaudio.volume = GameManager.Inst.beforeAudioVolum;
                 break;
             }
             playingStack++;
