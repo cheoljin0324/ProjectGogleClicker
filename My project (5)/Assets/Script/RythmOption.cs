@@ -206,7 +206,7 @@ public class RythmOption : MonoBehaviour
         ++stack5;
         if (stack5 == 8)
         {
-            stack1 = 0;
+            stack5 = 0;
         }
 
         imageBuutton[rythm].sprite = spriteButton[stack5];
@@ -392,7 +392,7 @@ public class RythmOption : MonoBehaviour
             GameManager.Inst.audioSource.clip = GameManager.Inst.audioRecorder[playingStack];
             GameManager.Inst.audioSource.Play();
 
-            if (playingStack == 15)
+            if (playingStack == 16)
             {
                 GameManager.Inst.audioSource.Stop();
                 audioshift = false;
